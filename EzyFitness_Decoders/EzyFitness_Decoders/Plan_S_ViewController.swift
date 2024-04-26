@@ -6,6 +6,7 @@ class Plan_S_ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.delegate=self
         tableView.dataSource=self
     }
