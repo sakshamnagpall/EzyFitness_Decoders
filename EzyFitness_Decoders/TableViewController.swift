@@ -1,7 +1,13 @@
+//
+//  TableViewController.swift
+//  EzyFitness_Decoders
+//
+//  Created by student on 29/04/24.
+//
+
 import UIKit
 
-class Plan_S_ViewController: UIViewController {
-    
+class TableViewController: UIViewController {
     @IBOutlet var tableView : UITableView!
     
     let exercises = [
@@ -19,13 +25,13 @@ class Plan_S_ViewController: UIViewController {
     
 }
 
-extension Plan_S_ViewController: UITableViewDelegate {
+extension TableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped me")
     }
 }
 
-extension Plan_S_ViewController: UITableViewDataSource {
+extension TableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return exercises.count
     }
@@ -37,6 +43,7 @@ extension Plan_S_ViewController: UITableViewDataSource {
         return cell
     }
     
+
+
+
 }
-
-

@@ -1,21 +1,20 @@
 //
-//  ViewController.swift
+//  FirstViewController.swift
 //  EzyFitness_Decoders
 //
-//  Created by student on 24/04/24.
+//  Created by student on 29/04/24.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-    }
 
+        // Do any additional setup after loading the view.
+    }
     
+
     
 }
-
