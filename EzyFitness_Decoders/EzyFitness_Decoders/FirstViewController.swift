@@ -15,9 +15,9 @@ class firstViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func btnTapped(_ sender: Any) {
-        let storyboard = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
-        
-        self.navigationController?.pushViewController(storyboard, animated: true)
+//        let storyboard = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+//        
+//        self.navigationController?.pushViewController(storyboard, animated: true)
     }
 
     
