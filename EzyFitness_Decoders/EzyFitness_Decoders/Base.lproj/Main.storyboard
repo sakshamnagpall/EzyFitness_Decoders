@@ -494,10 +494,10 @@ in order to improve and personalise the user experience.
             </objects>
             <point key="canvasLocation" x="7746" y="18"/>
         </scene>
-        <!--Fitness Goal View Controller-->
+        <!--FitnessVC-->
         <scene sceneID="d6O-RL-oZv">
             <objects>
-                <viewController storyboardIdentifier="FitnessGoalViewController" id="9dR-Sm-Zp8" customClass="FitnessGoalViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FitnessGoalViewController" id="9dR-Sm-Zp8" customClass="FitnessVC" customModule="EzyFitness_Decoders" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jjk-ld-60M">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -618,9 +618,16 @@ in order to improve and personalise the user experience.
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LVy-fo-JLR">
-                                <rect key="frame" x="215" y="359" width="91" height="34"/>
+                                <rect key="frame" x="215" y="359" width="47" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HdF-bY-DpM">
+                                <rect key="frame" x="285" y="359" width="47" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -647,11 +654,12 @@ in order to improve and personalise the user experience.
                                     <action selector="GetStarted:" destination="CZg-i3-ESM" eventType="touchUpInside" id="LEC-yX-lVm"/>
                                     <action selector="getStarted:" destination="CZg-i3-ESM" eventType="touchUpInside" id="uMk-Mm-MYY"/>
                                     <action selector="getStartedButton:" destination="CZg-i3-ESM" eventType="touchUpInside" id="yZu-tM-836"/>
+                                    <action selector="submitFitnessGoal:" destination="9dR-Sm-Zp8" eventType="touchUpInside" id="jnQ-hS-gEE"/>
                                     <segue destination="jDj-ee-09J" kind="show" id="Byy-Er-o3g"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qL-C9-7O1">
-                                <rect key="frame" x="311" y="373" width="15" height="20"/>
+                                <rect key="frame" x="262" y="373" width="15" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.83137255909999996" green="0.34509804840000002" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -706,10 +714,22 @@ in order to improve and personalise the user experience.
                                 <color key="textColor" red="0.85098040100000005" green="0.3803921938" blue="0.21568629149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkA-Kl-C9s">
+                                <rect key="frame" x="335" y="373" width="13" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.83137255909999996" green="0.34509804840000002" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tyc-Yu-jfm"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="BeHealthier" destination="is5-oD-Wct" id="uM8-xv-vL8"/>
+                        <outlet property="BuildMuscle" destination="WvU-I7-pao" id="WLX-7f-ZI6"/>
+                        <outlet property="BurnCalories" destination="dHe-eV-5Tb" id="CE6-PO-25j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="swQ-QF-Dii" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

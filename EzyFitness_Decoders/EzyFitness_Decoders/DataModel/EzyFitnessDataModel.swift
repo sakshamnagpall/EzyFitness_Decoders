@@ -31,8 +31,12 @@ struct User {
     var username: String
     var height: Double
     var weight: Double
-    let fitnessGoals: Set<FitnessGoal>
+    var fitnessGoals: Set<FitnessGoal>
     var workoutFrequency: WorkoutFrequency
+//    mutating func updateUserDetails(id: UUID, weight : Double , height : Double , goal : Set<FitnessGoal> , workoutFrequency : WorkoutFrequency) {
+//               
+//                   
+//           }
 }
 
 
@@ -184,11 +188,11 @@ let signUpData = SignUp(name: "John Doe", contact: "1234567890", email: "john.do
 
 // MARK: - User
 
-let user = User(id: .unique, username: "JohnDoe", height: 5.8, weight: 67.0, fitnessGoals: [.loseWeight, .improveCardio], workoutFrequency: .daily)
+
 
 // MARK: - Home Page
-
-let todayActivities = TodayActivities(user: user, workoutCount: 2, caloriesBurned: 300, stepsCount: 5000, appUsageTimeInMinutes: 60)
+//
+//let todayActivities = TodayActivities(user: user, workoutCount: 2, caloriesBurned: 300, stepsCount: 5000, appUsageTimeInMinutes: 60)
 
 let strengthTrainingExercise = Exercise(name: "Squats", sets: 3, reps: 10, weight: 50)
 let cardioExercise = Exercise(name: "Running", sets: 1, reps: 30)
@@ -230,3 +234,25 @@ let progress = Progress(percentage: 50.0)
 let achievements = Achievements(level: 5, daysUntilNextLevel: 15, consecutiveWorkoutDays: 7)
 
 let badge = Badge(isNew: true, count: 3)
+
+
+class AppUserDataMoel {
+    private var user : [User] = []
+    init() {
+        user.append(User(id: .unique, username: "JohnDoe", height: 5.8, weight: 67.0, fitnessGoals: [.loseWeight, .improveCardio], workoutFrequency: .daily))
+    }
+    func getUserDetails() -> [User] {
+        return self.user
+    }
+    func updateUser(id : UUID , weight : Double , height : Double , goal : Set<FitnessGoal> , workoutFrequency : WorkoutFrequency) {
+        if let userID = user.firstIndex(where: {$0.id == id}) {
+            user[userID].weight = weight
+            user[userID].height = height
+            user[userID].fitnessGoals = goal
+            user[userID].workoutFrequency = workoutFrequency
+        }
+    }
+    
+}
+var userDataModel = AppUserDataMoel()
+
