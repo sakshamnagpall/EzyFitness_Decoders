@@ -29,7 +29,7 @@ enum WorkoutFrequency: String, CaseIterable {
 struct User {
     let id: UUID // Changed to UUID for unique identifier
     var username: String
-    var height: Double
+    var height: String
     var weight: Double
     var fitnessGoals: Set<FitnessGoal>
     var workoutFrequency: WorkoutFrequency
@@ -51,10 +51,10 @@ enum WorkoutType: String, CaseIterable {
 
 struct TodayActivities {
     let user: User
-    var bmi: Double { // Computed property for BMI calculation
-        // Implement logic to calculate BMI based on user height and weight
-        user.height != 0 ? user.weight / (user.height * user.height) : 0
-    }
+//    var bmi: Double { // Computed property for BMI calculation
+//        // Implement logic to calculate BMI based on user height and weight
+////        user.height != 0 ? user.weight / (user.height * user.height) : 0
+//    }
     var workoutCount: Int
     var caloriesBurned: Int
     var stepsCount: Int
@@ -239,12 +239,12 @@ let badge = Badge(isNew: true, count: 3)
 class AppUserDataMoel {
     private var user : [User] = []
     init() {
-        user.append(User(id: .unique, username: "JohnDoe", height: 5.8, weight: 67.0, fitnessGoals: [.loseWeight, .improveCardio], workoutFrequency: .daily))
+        user.append(User(id: .unique, username: "JohnDoe", height: "5'8''", weight: 67.0, fitnessGoals: [.loseWeight, .improveCardio], workoutFrequency: .daily))
     }
     func getUserDetails() -> [User] {
         return self.user
     }
-    func updateUser(id : UUID , weight : Double , height : Double , goal : Set<FitnessGoal> , workoutFrequency : WorkoutFrequency) {
+    func updateUser(id : UUID , weight : Double , height : String , goal : Set<FitnessGoal> , workoutFrequency : WorkoutFrequency) {
         if let userID = user.firstIndex(where: {$0.id == id}) {
             user[userID].weight = weight
             user[userID].height = height
