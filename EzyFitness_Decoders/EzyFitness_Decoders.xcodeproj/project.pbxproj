@@ -24,6 +24,10 @@
 		3FB95D8C2BD8CF2C00A26FD8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3FB95D8B2BD8CF2C00A26FD8 /* Base */; };
 		3FB95D8E2BD8CF2D00A26FD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB95D8D2BD8CF2D00A26FD8 /* Assets.xcassets */; };
 		3FB95D912BD8CF2D00A26FD8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3FB95D902BD8CF2D00A26FD8 /* Base */; };
+		3FBD1A9A2BE36B6E0005C4BF /* ButtonCollectionViewCell1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD1A992BE36B6E0005C4BF /* ButtonCollectionViewCell1CollectionViewCell.swift */; };
+		3FBD1A9C2BE36D360005C4BF /* ShoulderStrechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD1A9B2BE36D360005C4BF /* ShoulderStrechViewController.swift */; };
+		3FBD1AA02BE373930005C4BF /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD1A9F2BE373930005C4BF /* SampleViewController.swift */; };
+		3FBD1AA32BE3915E0005C4BF /* CHTCollectionViewWaterfallLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 3FBD1AA22BE3915E0005C4BF /* CHTCollectionViewWaterfallLayout */; };
 		3FBE62E62BDA551700A905C8 /* EzyFitnessDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE62E52BDA551700A905C8 /* EzyFitnessDataModel.swift */; };
 		3FBE62E82BDA950900A905C8 /* Plan_Space_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE62E72BDA950900A905C8 /* Plan_Space_ViewController.swift */; };
 		3FBE62EA2BDA9A8500A905C8 /* Activity_H_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE62E92BDA9A8500A905C8 /* Activity_H_ViewController.swift */; };
@@ -51,6 +55,9 @@
 		3FB95D8D2BD8CF2D00A26FD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FB95D902BD8CF2D00A26FD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FB95D922BD8CF2D00A26FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBD1A992BE36B6E0005C4BF /* ButtonCollectionViewCell1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCollectionViewCell1CollectionViewCell.swift; sourceTree = "<group>"; };
+		3FBD1A9B2BE36D360005C4BF /* ShoulderStrechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoulderStrechViewController.swift; sourceTree = "<group>"; };
+		3FBD1A9F2BE373930005C4BF /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		3FBE62E52BDA551700A905C8 /* EzyFitnessDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EzyFitnessDataModel.swift; sourceTree = "<group>"; };
 		3FBE62E72BDA950900A905C8 /* Plan_Space_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan_Space_ViewController.swift; sourceTree = "<group>"; };
 		3FBE62E92BDA9A8500A905C8 /* Activity_H_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity_H_ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBD1AA32BE3915E0005C4BF /* CHTCollectionViewWaterfallLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +102,8 @@
 				3FB95D862BD8CF2C00A26FD8 /* SceneDelegate.swift */,
 				3FB95D882BD8CF2C00A26FD8 /* ViewController.swift */,
 				3FB95D8A2BD8CF2C00A26FD8 /* Main.storyboard */,
+				3FBD1A9F2BE373930005C4BF /* SampleViewController.swift */,
+				3FBD1A9B2BE36D360005C4BF /* ShoulderStrechViewController.swift */,
 				3F785B002BE2469100D11CFB /* LogInViewController.swift */,
 				3F785AFE2BE2448A00D11CFB /* CreateAccountViewController.swift */,
 				3F0C49472BE0C07F0077FD8E /* Exercise_8_ViewController.swift */,
@@ -101,6 +111,7 @@
 				3FD0AF202BDF696900675235 /* firstViewController.swift */,
 				3F16E25B2BDB60830068A603 /* HomeViewController.swift */,
 				3FDF1DCD2BDAB56300CC7A7E /* MorningYoga_ViewController.swift */,
+				3FBD1A992BE36B6E0005C4BF /* ButtonCollectionViewCell1CollectionViewCell.swift */,
 				3FBE62E92BDA9A8500A905C8 /* Activity_H_ViewController.swift */,
 				3FBE62E72BDA950900A905C8 /* Plan_Space_ViewController.swift */,
 				3F4D5C112BDA1E6D00C24681 /* Plan_S_ViewController.swift */,
@@ -139,6 +150,9 @@
 			dependencies = (
 			);
 			name = EzyFitness_Decoders;
+			packageProductDependencies = (
+				3FBD1AA22BE3915E0005C4BF /* CHTCollectionViewWaterfallLayout */,
+			);
 			productName = EzyFitness_Decoders;
 			productReference = 3FB95D812BD8CF2C00A26FD8 /* EzyFitness_Decoders.app */;
 			productType = "com.apple.product-type.application";
@@ -167,6 +181,9 @@
 				Base,
 			);
 			mainGroup = 3FB95D782BD8CF2C00A26FD8;
+			packageReferences = (
+				3FBD1AA12BE3915E0005C4BF /* XCRemoteSwiftPackageReference "CHTCollectionViewWaterfallLayout" */,
+			);
 			productRefGroup = 3FB95D822BD8CF2C00A26FD8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -202,6 +219,7 @@
 				3F0C49442BDFD6D40077FD8E /* ProfileViewController.swift in Sources */,
 				3FBE62E62BDA551700A905C8 /* EzyFitnessDataModel.swift in Sources */,
 				3FBE62EA2BDA9A8500A905C8 /* Activity_H_ViewController.swift in Sources */,
+				3FBD1A9C2BE36D360005C4BF /* ShoulderStrechViewController.swift in Sources */,
 				3F4D5C122BDA1E6D00C24681 /* Plan_S_ViewController.swift in Sources */,
 				3F785AFF2BE2448A00D11CFB /* CreateAccountViewController.swift in Sources */,
 				3F3E61262BE237D400AF6ABB /* DailyWorkoutViewController.swift in Sources */,
@@ -211,8 +229,10 @@
 				3FBE62E82BDA950900A905C8 /* Plan_Space_ViewController.swift in Sources */,
 				3FD0AF212BDF696900675235 /* firstViewController.swift in Sources */,
 				3FDF1DCE2BDAB56300CC7A7E /* MorningYoga_ViewController.swift in Sources */,
+				3FBD1A9A2BE36B6E0005C4BF /* ButtonCollectionViewCell1CollectionViewCell.swift in Sources */,
 				3F16E25C2BDB60830068A603 /* HomeViewController.swift in Sources */,
 				3FA9A4942BE2124800680C3D /* FitnessVC.swift in Sources */,
+				3FBD1AA02BE373930005C4BF /* SampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +455,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3FBD1AA12BE3915E0005C4BF /* XCRemoteSwiftPackageReference "CHTCollectionViewWaterfallLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AfrazCodes/CHTCollectionViewWaterfallLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3FBD1AA22BE3915E0005C4BF /* CHTCollectionViewWaterfallLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FBD1AA12BE3915E0005C4BF /* XCRemoteSwiftPackageReference "CHTCollectionViewWaterfallLayout" */;
+			productName = CHTCollectionViewWaterfallLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3FB95D792BD8CF2C00A26FD8 /* Project object */;
 }
