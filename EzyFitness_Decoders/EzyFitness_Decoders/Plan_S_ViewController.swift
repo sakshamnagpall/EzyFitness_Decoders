@@ -7,6 +7,13 @@ class Plan_S_ViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     
+//    @IBAction func didChangeSegment(_ sender: UISegmentedControl){
+//        if sender.selectedSegmentIndex == 0{
+//            
+//        } else{
+//            
+//        }
+//    }
     
     let exercises = [
         "Shoulder Strech",

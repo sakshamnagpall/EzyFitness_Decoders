@@ -12,11 +12,24 @@
 		3F0C49482BE0C0800077FD8E /* Exercise_8_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0C49472BE0C07F0077FD8E /* Exercise_8_ViewController.swift */; };
 		3F16E25C2BDB60830068A603 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16E25B2BDB60830068A603 /* HomeViewController.swift */; };
 		3F3E61262BE237D400AF6ABB /* DailyWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E61252BE237D400AF6ABB /* DailyWorkoutViewController.swift */; };
+		3F4910102BE67A6A00722EF5 /* Plank.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4910042BE67A6900722EF5 /* Plank.jpeg */; };
+		3F4910112BE67A6A00722EF5 /* JumpingJacks.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F4910052BE67A6900722EF5 /* JumpingJacks.gif */; };
+		3F4910122BE67A6A00722EF5 /* pushup.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F4910062BE67A6900722EF5 /* pushup.gif */; };
+		3F4910132BE67A6A00722EF5 /* shoulderStretch.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F4910072BE67A6900722EF5 /* shoulderStretch.gif */; };
+		3F4910142BE67A6A00722EF5 /* situp.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F4910082BE67A6900722EF5 /* situp.gif */; };
+		3F4910152BE67A6A00722EF5 /* WallSit.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F4910092BE67A6A00722EF5 /* WallSit.gif */; };
+		3F4910162BE67A6A00722EF5 /* Side squats .gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F49100A2BE67A6A00722EF5 /* Side squats .gif */; };
+		3F4910182BE67A6A00722EF5 /* mountainClimber.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F49100C2BE67A6A00722EF5 /* mountainClimber.gif */; };
+		3F4910192BE67A6A00722EF5 /* neckRoll.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F49100D2BE67A6A00722EF5 /* neckRoll.gif */; };
+		3F49101A2BE67A6A00722EF5 /* legExtension.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F49100E2BE67A6A00722EF5 /* legExtension.gif */; };
+		3F49101B2BE67A6A00722EF5 /* kneetochest.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F49100F2BE67A6A00722EF5 /* kneetochest.gif */; };
 		3F4D5C102BDA0E7200C24681 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D5C0F2BDA0E7200C24681 /* ThirdViewController.swift */; };
 		3F4D5C122BDA1E6D00C24681 /* Plan_S_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D5C112BDA1E6D00C24681 /* Plan_S_ViewController.swift */; };
 		3F567CBB2BD9018F009F1216 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F567CBA2BD9018F009F1216 /* SecondViewController.swift */; };
 		3F785AFF2BE2448A00D11CFB /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F785AFE2BE2448A00D11CFB /* CreateAccountViewController.swift */; };
 		3F785B012BE2469100D11CFB /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F785B002BE2469100D11CFB /* LogInViewController.swift */; };
+		3F9CFFD52BE4DB2600D8EA8F /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 3F9CFFD42BE4DB2600D8EA8F /* FSCalendar */; };
+		3F9CFFD72BE4DBFC00D8EA8F /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CFFD62BE4DBFC00D8EA8F /* CalenderViewController.swift */; };
 		3FA9A4942BE2124800680C3D /* FitnessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA9A4932BE2124800680C3D /* FitnessVC.swift */; };
 		3FB95D852BD8CF2C00A26FD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB95D842BD8CF2C00A26FD8 /* AppDelegate.swift */; };
 		3FB95D872BD8CF2C00A26FD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB95D862BD8CF2C00A26FD8 /* SceneDelegate.swift */; };
@@ -41,11 +54,23 @@
 		3F0C49472BE0C07F0077FD8E /* Exercise_8_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise_8_ViewController.swift; sourceTree = "<group>"; };
 		3F16E25B2BDB60830068A603 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3F3E61252BE237D400AF6ABB /* DailyWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWorkoutViewController.swift; sourceTree = "<group>"; };
+		3F4910042BE67A6900722EF5 /* Plank.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Plank.jpeg; path = ../../../../Downloads/gif/Plank.jpeg; sourceTree = "<group>"; };
+		3F4910052BE67A6900722EF5 /* JumpingJacks.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = JumpingJacks.gif; path = ../../../../Downloads/gif/JumpingJacks.gif; sourceTree = "<group>"; };
+		3F4910062BE67A6900722EF5 /* pushup.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = pushup.gif; path = ../../../../Downloads/gif/pushup.gif; sourceTree = "<group>"; };
+		3F4910072BE67A6900722EF5 /* shoulderStretch.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = shoulderStretch.gif; path = ../../../../Downloads/gif/shoulderStretch.gif; sourceTree = "<group>"; };
+		3F4910082BE67A6900722EF5 /* situp.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = situp.gif; path = ../../../../Downloads/gif/situp.gif; sourceTree = "<group>"; };
+		3F4910092BE67A6A00722EF5 /* WallSit.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = WallSit.gif; path = ../../../../Downloads/gif/WallSit.gif; sourceTree = "<group>"; };
+		3F49100A2BE67A6A00722EF5 /* Side squats .gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "Side squats .gif"; path = "../../../../Downloads/gif/Side squats .gif"; sourceTree = "<group>"; };
+		3F49100C2BE67A6A00722EF5 /* mountainClimber.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = mountainClimber.gif; path = ../../../../Downloads/gif/mountainClimber.gif; sourceTree = "<group>"; };
+		3F49100D2BE67A6A00722EF5 /* neckRoll.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = neckRoll.gif; path = ../../../../Downloads/gif/neckRoll.gif; sourceTree = "<group>"; };
+		3F49100E2BE67A6A00722EF5 /* legExtension.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = legExtension.gif; path = ../../../../Downloads/gif/legExtension.gif; sourceTree = "<group>"; };
+		3F49100F2BE67A6A00722EF5 /* kneetochest.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = kneetochest.gif; path = ../../../../Downloads/gif/kneetochest.gif; sourceTree = "<group>"; };
 		3F4D5C0F2BDA0E7200C24681 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		3F4D5C112BDA1E6D00C24681 /* Plan_S_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan_S_ViewController.swift; sourceTree = "<group>"; };
 		3F567CBA2BD9018F009F1216 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3F785AFE2BE2448A00D11CFB /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		3F785B002BE2469100D11CFB /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		3F9CFFD62BE4DBFC00D8EA8F /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
 		3FA9A4932BE2124800680C3D /* FitnessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessVC.swift; sourceTree = "<group>"; };
 		3FB95D812BD8CF2C00A26FD8 /* EzyFitness_Decoders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EzyFitness_Decoders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB95D842BD8CF2C00A26FD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FBD1AA32BE3915E0005C4BF /* CHTCollectionViewWaterfallLayout in Frameworks */,
+				3F9CFFD52BE4DB2600D8EA8F /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +128,7 @@
 				3FB95D862BD8CF2C00A26FD8 /* SceneDelegate.swift */,
 				3FB95D882BD8CF2C00A26FD8 /* ViewController.swift */,
 				3FB95D8A2BD8CF2C00A26FD8 /* Main.storyboard */,
+				3F9CFFD62BE4DBFC00D8EA8F /* CalenderViewController.swift */,
 				3FBD1A9F2BE373930005C4BF /* SampleViewController.swift */,
 				3FBD1A9B2BE36D360005C4BF /* ShoulderStrechViewController.swift */,
 				3F785B002BE2469100D11CFB /* LogInViewController.swift */,
@@ -117,6 +144,17 @@
 				3F4D5C112BDA1E6D00C24681 /* Plan_S_ViewController.swift */,
 				3F4D5C0F2BDA0E7200C24681 /* ThirdViewController.swift */,
 				3F567CBA2BD9018F009F1216 /* SecondViewController.swift */,
+				3F4910052BE67A6900722EF5 /* JumpingJacks.gif */,
+				3F49100F2BE67A6A00722EF5 /* kneetochest.gif */,
+				3F49100E2BE67A6A00722EF5 /* legExtension.gif */,
+				3F49100C2BE67A6A00722EF5 /* mountainClimber.gif */,
+				3F49100D2BE67A6A00722EF5 /* neckRoll.gif */,
+				3F4910042BE67A6900722EF5 /* Plank.jpeg */,
+				3F4910062BE67A6900722EF5 /* pushup.gif */,
+				3F4910072BE67A6900722EF5 /* shoulderStretch.gif */,
+				3F49100A2BE67A6A00722EF5 /* Side squats .gif */,
+				3F4910082BE67A6900722EF5 /* situp.gif */,
+				3F4910092BE67A6A00722EF5 /* WallSit.gif */,
 				3F0C49452BE0BEF40077FD8E /* strecth.gif */,
 				3FB95D8D2BD8CF2D00A26FD8 /* Assets.xcassets */,
 				3FB95D8F2BD8CF2D00A26FD8 /* LaunchScreen.storyboard */,
@@ -152,6 +190,7 @@
 			name = EzyFitness_Decoders;
 			packageProductDependencies = (
 				3FBD1AA22BE3915E0005C4BF /* CHTCollectionViewWaterfallLayout */,
+				3F9CFFD42BE4DB2600D8EA8F /* FSCalendar */,
 			);
 			productName = EzyFitness_Decoders;
 			productReference = 3FB95D812BD8CF2C00A26FD8 /* EzyFitness_Decoders.app */;
@@ -183,6 +222,7 @@
 			mainGroup = 3FB95D782BD8CF2C00A26FD8;
 			packageReferences = (
 				3FBD1AA12BE3915E0005C4BF /* XCRemoteSwiftPackageReference "CHTCollectionViewWaterfallLayout" */,
+				3F9CFFD32BE4DB2600D8EA8F /* XCRemoteSwiftPackageReference "FSCalendar" */,
 			);
 			productRefGroup = 3FB95D822BD8CF2C00A26FD8 /* Products */;
 			projectDirPath = "";
@@ -198,10 +238,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F49101B2BE67A6A00722EF5 /* kneetochest.gif in Resources */,
+				3F4910122BE67A6A00722EF5 /* pushup.gif in Resources */,
+				3F4910142BE67A6A00722EF5 /* situp.gif in Resources */,
 				3F0C49462BE0BEF40077FD8E /* strecth.gif in Resources */,
+				3F49101A2BE67A6A00722EF5 /* legExtension.gif in Resources */,
+				3F4910192BE67A6A00722EF5 /* neckRoll.gif in Resources */,
+				3F4910132BE67A6A00722EF5 /* shoulderStretch.gif in Resources */,
 				3FB95D8E2BD8CF2D00A26FD8 /* Assets.xcassets in Resources */,
+				3F4910112BE67A6A00722EF5 /* JumpingJacks.gif in Resources */,
+				3F4910162BE67A6A00722EF5 /* Side squats .gif in Resources */,
+				3F4910182BE67A6A00722EF5 /* mountainClimber.gif in Resources */,
 				3FB95D912BD8CF2D00A26FD8 /* Base in Resources */,
 				3FB95D8C2BD8CF2C00A26FD8 /* Base in Resources */,
+				3F4910102BE67A6A00722EF5 /* Plank.jpeg in Resources */,
+				3F4910152BE67A6A00722EF5 /* WallSit.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +284,7 @@
 				3F16E25C2BDB60830068A603 /* HomeViewController.swift in Sources */,
 				3FA9A4942BE2124800680C3D /* FitnessVC.swift in Sources */,
 				3FBD1AA02BE373930005C4BF /* SampleViewController.swift in Sources */,
+				3F9CFFD72BE4DBFC00D8EA8F /* CalenderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +509,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3F9CFFD32BE4DB2600D8EA8F /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
 		3FBD1AA12BE3915E0005C4BF /* XCRemoteSwiftPackageReference "CHTCollectionViewWaterfallLayout" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AfrazCodes/CHTCollectionViewWaterfallLayout";
@@ -468,6 +528,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3F9CFFD42BE4DB2600D8EA8F /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F9CFFD32BE4DB2600D8EA8F /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
 		3FBD1AA22BE3915E0005C4BF /* CHTCollectionViewWaterfallLayout */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3FBD1AA12BE3915E0005C4BF /* XCRemoteSwiftPackageReference "CHTCollectionViewWaterfallLayout" */;
