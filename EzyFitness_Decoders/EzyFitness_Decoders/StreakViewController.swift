@@ -58,7 +58,7 @@ class StreakViewController: UIViewController {
             
             // This function updates the streak and level labels
             func updateLabels() {
-                streakLabel.text = "Streak: \(streakCount)"
+                streakLabel.text = "\(streakCount)"
                 levelLabel.text = "Level: \(level)"
                 saveStreakCount() // Save the streak count whenever it's updated
             }

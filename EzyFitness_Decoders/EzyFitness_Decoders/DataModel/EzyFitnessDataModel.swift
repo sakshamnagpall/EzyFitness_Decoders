@@ -111,44 +111,44 @@ struct Duration{
     var hours: Int
     var minutes: Int
 }
-//class Plan {
-//    var plan: [[String : Bool]] = []
-//    var currentplan : [String : Bool] = [:]
-//    var index : Int = -1
-//
-//    // Function to add a new array of strings
-//    func addNewArray(exercises: [String : Bool]) {
-//        plan.append(exercises)
-//        currentplan = exercises
-//        
-//    }
-//
-//    // Function to retrieve the array of strings at a specific index
-//    func getArray(at index: Int) -> [String]? {
-//        guard index >= 0 && index < plan.count else {
-//            return nil
-//        }
-//        let dictionary = plan[index]
-//        return Array(dictionary.keys)
-//    }
-//
-//    // Function to remove the array at a specific index
-//    func removeArray(at index: Int) {
-//        guard index >= 0 && index < plan.count else {
-//            return
-//        }
-//        plan.remove(at: index)
-//    }
-//    func printAllElements() {
-//            for (index, dictionary) in plan.enumerated() {
-//                print("Array at index \(index):")
-//                for (key, value) in dictionary {
-//                    print("Key: \(key), Value: \(value)")
-//                }
-//                print("--------------------")
-//            }
-//        }
-//}
+class Pllan {
+    var plan: [[String : Bool]] = []
+    var currentplan : [String : Bool] = [:]
+    var index : Int = -1
+
+    // Function to add a new array of strings
+    func addNewArray(exercises: [String : Bool]) {
+        plan.append(exercises)
+        currentplan = exercises
+        
+    }
+
+    // Function to retrieve the array of strings at a specific index
+    func getArray(at index: Int) -> [String]? {
+        guard index >= 0 && index < plan.count else {
+            return nil
+        }
+        let dictionary = plan[index]
+        return Array(dictionary.keys)
+    }
+
+    // Function to remove the array at a specific index
+    func removeArray(at index: Int) {
+        guard index >= 0 && index < plan.count else {
+            return
+        }
+        plan.remove(at: index)
+    }
+    func printAllElements() {
+            for (index, dictionary) in plan.enumerated() {
+                print("Array at index \(index):")
+                for (key, value) in dictionary {
+                    print("Key: \(key), Value: \(value)")
+                }
+                print("--------------------")
+            }
+        }
+}
 
 
 enum SeatingOption: String {

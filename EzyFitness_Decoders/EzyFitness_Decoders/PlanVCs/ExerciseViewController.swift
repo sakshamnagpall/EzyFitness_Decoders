@@ -76,6 +76,8 @@ class ExerciseViewController: UIViewController {
         for exercise in exercises2 {
             selectedExercises[exercise] = false
         }
+        tableView1.register(UITableViewCell.self, forCellReuseIdentifier: "ExerciseCell")
+        tableView2.register(UITableViewCell.self, forCellReuseIdentifier: "ExerciseCell")
 
         segmentedControl.addTarget(self, action: #selector(segmentChanged(_:)), for: .valueChanged)
     }
@@ -156,71 +158,6 @@ extension ExerciseViewController: UITableViewDelegate {
 
         navigationController?.pushViewController(selectedExerciseVC, animated: true)
         
-        var selectExerciseVC: UIViewController?
-        
-        // Determine the selected exercise view controller based on the selected table view
-        if tableView == tableView1 {
-            switch indexPath.row {
-            case 0:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "ShoulderStretchViewController")
-            case 1:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "SideBendViewController")
-            case 2:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "SeatedMarch")
-            case 3:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "LegExtension")
-            case 4:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "UpperBodyTwist")
-            case 5:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "HamstringStretch")
-            case 6:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "NeckRoll")
-            case 7:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "AnkleRotation")
-            case 8:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "ToeLifts")
-            case 9:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "SideBendViewController")
-            case 10:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "SideBendViewController")
-            // Add cases for other exercises as needed
-            default:
-                break
-            }
-        } else if tableView == tableView2 {
-            switch indexPath.row {
-            case 0:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "SquatsViewController")
-            case 1:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "MountainClimbersViewController")
-            case 2:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "MountainClimbersViewController")
-            case 3:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "MountainClimbersViewController")
-            case 4:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "MountainClimbersViewController")
-            case 5:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "MountainClimbersViewController")
-            case 6:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "MountainClimbersViewController")
-            case 7:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "MountainClimbersViewController")
-            case 8:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "MountainClimbersViewController")
-            case 9:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "MountainClimbersViewController")
-            case 10:
-                selectExerciseVC = storyboard?.instantiateViewController(withIdentifier: "MountainClimbersViewController")
-            // Add cases for other exercises as needed
-            default:
-                break
-            }
-        }
-        
-        // Push the selected exercise view controller onto the navigation stack
-        if let selectedVC = selectExerciseVC {
-            navigationController?.pushViewController(selectedVC, animated: true)
-        }
     }
 }
 
