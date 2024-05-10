@@ -1,5 +1,5 @@
 //
-//  Butterfly .swift
+//  OverheadPress.swift
 //  exercisepage
 //
 //  Created by Akash Vishwakarma on 03/05/24.
@@ -13,13 +13,14 @@ import UIKit
 import WebKit
 import ImageIO
 
-class Butterfly: UIViewController {
+class AnkleRotation: UIViewController {
 
+    
     @IBOutlet weak var gifImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let gifURL = Bundle.main.url(forResource: "shoulderStretch", withExtension: "gif")!
+        let gifURL = Bundle.main.url(forResource: "ankleRotation", withExtension: "gif")!
         let imageData = try! Data(contentsOf: gifURL)
         let imageSource = CGImageSourceCreateWithData(imageData as CFData, nil)
         
@@ -32,7 +33,7 @@ class Butterfly: UIViewController {
         }
         
         gifImageView.animationImages = images
-        gifImageView.animationDuration = Double(frameCount) / 10.0
+        gifImageView.animationDuration = Double(frameCount) / 0.5
         gifImageView.animationRepeatCount = 0
         
         gifImageView.startAnimating()

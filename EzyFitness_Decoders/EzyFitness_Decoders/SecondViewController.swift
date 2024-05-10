@@ -1,17 +1,18 @@
-//
-//  2ndViewController.swift
-//  EzyFitness_Decoders
-//
-//  Created by student on 24/04/24.
-//
-
 import UIKit
 
 class SecondViewController: UIViewController {
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.hidesBackButton = true
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+            super.viewWillDisappear(animated)
+            
+            // Show the navigation bar again when the view controller is about to disappear
+            navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
 }

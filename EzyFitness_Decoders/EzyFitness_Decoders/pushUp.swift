@@ -32,7 +32,7 @@ class PushUp: UIViewController {
         }
         
         gifImageView.animationImages = images
-        gifImageView.animationDuration = Double(frameCount) / 10.0
+        gifImageView.animationDuration = Double(frameCount) / 0.5
         gifImageView.animationRepeatCount = 0
         
         gifImageView.startAnimating()

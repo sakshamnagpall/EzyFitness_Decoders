@@ -7,103 +7,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BD10596A-BA54-440A-AA66-F153E337197C"
-            shouldBeEnabled = "Yes"
+            uuid = "EA3C9CF0-EC4E-4AA1-B8B5-4A4E16C53ED2"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EzyFitness_Decoders/CreateAccountViewController.swift"
+            filePath = "EzyFitness_Decoders/FitnessViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "CreateAccountViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "BD10596A-BA54-440A-AA66-F153E337197C - 30d1e443dd1ed7ac"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EzyFitness_Decoders.CreateAccountViewController.fullName.getter : Swift.Optional&lt;__C.UITextField&gt;"
-                  moduleName = "EzyFitness_Decoders"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/student/Documents/EzyFitness_Decoders/EzyFitness_Decoders/EzyFitness_Decoders/CreateAccountViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0">
-               </Location>
-               <Location
-                  uuid = "BD10596A-BA54-440A-AA66-F153E337197C - 7f5885dcae006fc0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EzyFitness_Decoders.CreateAccountViewController.fullName.setter : Swift.Optional&lt;__C.UITextField&gt;"
-                  moduleName = "EzyFitness_Decoders"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/student/Documents/EzyFitness_Decoders/EzyFitness_Decoders/EzyFitness_Decoders/CreateAccountViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0">
-               </Location>
-               <Location
-                  uuid = "BD10596A-BA54-440A-AA66-F153E337197C - 53b099a4fca7f060"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EzyFitness_Decoders.CreateAccountViewController.fullName.modify : Swift.Optional&lt;__C.UITextField&gt;"
-                  moduleName = "EzyFitness_Decoders"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/student/Documents/EzyFitness_Decoders/EzyFitness_Decoders/EzyFitness_Decoders/CreateAccountViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13">
-               </Location>
-               <Location
-                  uuid = "BD10596A-BA54-440A-AA66-F153E337197C - 9e8385afbc29784"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EzyFitness_Decoders.CreateAccountViewController.fullName.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "EzyFitness_Decoders"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/student/Documents/EzyFitness_Decoders/EzyFitness_Decoders/%3Ccompiler-generated%3E"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0">
-               </Location>
-               <Location
-                  uuid = "BD10596A-BA54-440A-AA66-F153E337197C - 82be3dc9e8082647"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EzyFitness_Decoders.CreateAccountViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; EzyFitness_Decoders.CreateAccountViewController"
-                  moduleName = "EzyFitness_Decoders"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/student/Documents/EzyFitness_Decoders/EzyFitness_Decoders/EzyFitness_Decoders/CreateAccountViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13">
-               </Location>
-               <Location
-                  uuid = "BD10596A-BA54-440A-AA66-F153E337197C - 47d72463d5e12682"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EzyFitness_Decoders.CreateAccountViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;EzyFitness_Decoders.CreateAccountViewController&gt;"
-                  moduleName = "EzyFitness_Decoders"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/student/Documents/EzyFitness_Decoders/EzyFitness_Decoders/EzyFitness_Decoders/CreateAccountViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13">
-               </Location>
-            </Locations>
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "CheckboxBurnCalories(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2704D1BC-6EC4-49E8-BEC3-D15288D76418"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EzyFitness_Decoders/PlanViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

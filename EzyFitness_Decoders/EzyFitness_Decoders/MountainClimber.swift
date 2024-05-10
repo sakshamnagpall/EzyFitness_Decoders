@@ -1,22 +1,25 @@
 //
-//  Sidesquats .swift
+//  MountainClimber .swift
 //  exercisepage
 //
 //  Created by Akash Vishwakarma on 03/05/24.
 //
 
 import Foundation
+
+import Foundation
+
 import UIKit
 import WebKit
 import ImageIO
 
-class Sidesquats: UIViewController {
-
+class MountainClimber: UIViewController {
     @IBOutlet weak var gifImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let gifURL = Bundle.main.url(forResource: "side squats", withExtension: "gif")!
+        let gifURL = Bundle.main.url(forResource: "mountainClimber", withExtension: "gif")!
         let imageData = try! Data(contentsOf: gifURL)
         let imageSource = CGImageSourceCreateWithData(imageData as CFData, nil)
         
@@ -29,7 +32,7 @@ class Sidesquats: UIViewController {
         }
         
         gifImageView.animationImages = images
-        gifImageView.animationDuration = Double(frameCount) / 10.0
+        gifImageView.animationDuration = Double(frameCount) / 0.5
         gifImageView.animationRepeatCount = 0
         
         gifImageView.startAnimating()

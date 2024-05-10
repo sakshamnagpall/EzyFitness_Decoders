@@ -29,7 +29,7 @@ class HamstringStretch: UIViewController {
         }
         
         gifImageView.animationImages = images
-        gifImageView.animationDuration = Double(frameCount) / 10.0
+        gifImageView.animationDuration = Double(frameCount) / 0.4
         gifImageView.animationRepeatCount = 0
         
         gifImageView.startAnimating()
