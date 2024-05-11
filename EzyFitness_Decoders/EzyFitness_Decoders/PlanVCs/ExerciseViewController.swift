@@ -5,20 +5,19 @@ protocol ExerciseSelectionDelegate: AnyObject {
 }
 
 class ExerciseViewController: UIViewController {
-
+    var plan: Plan?
+    var selectedExercises: [String: Bool] = [:] {
+        didSet {
+            countLabel.text = " \(selectedExercises.values.filter { $0 }.count)"
+        }
+    }
+    
     weak var delegate: ExerciseSelectionDelegate?
 
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var tableView2: UITableView!
     @IBOutlet weak var tableView1: UITableView!
-    
     @IBOutlet weak var segmentedControl: UISegmentedControl!
-
-    var selectedExercises: [String: Bool] = [:] {
-        didSet {
-            countLabel.text = " \(selectedExercises.filter { $0.value }.count)"
-        }
-    }
 
     let exercises1 = [
         "Shoulder Strech",
@@ -68,6 +67,8 @@ class ExerciseViewController: UIViewController {
         tableView2.delegate = self
         tableView1.isHidden = false
         tableView2.isHidden = true
+        tableView1.register(UITableViewCell.self, forCellReuseIdentifier: "ExerciseCell")
+        tableView2.register(UITableViewCell.self, forCellReuseIdentifier: "ExerciseCell")
 
         // Initialize selected exercises to false for all exercises
         for exercise in exercises1 {
@@ -76,8 +77,7 @@ class ExerciseViewController: UIViewController {
         for exercise in exercises2 {
             selectedExercises[exercise] = false
         }
-        tableView1.register(UITableViewCell.self, forCellReuseIdentifier: "ExerciseCell")
-        tableView2.register(UITableViewCell.self, forCellReuseIdentifier: "ExerciseCell")
+        
 
         segmentedControl.addTarget(self, action: #selector(segmentChanged(_:)), for: .valueChanged)
     }
@@ -104,16 +104,21 @@ class ExerciseViewController: UIViewController {
 
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
         tableView1.isHidden = sender.selectedSegmentIndex == 1
-        tableView2.isHidden = sender.selectedSegmentIndex == 0
-        countLabel.text = " \(selectedExercises.filter { $0.value }.count)"
+            tableView2.isHidden = sender.selectedSegmentIndex == 0
+            countLabel.text = " \(selectedExercises.filter { $0.value }.count)"
+            // Reload the table view to reflect the changes
+            tableView1.reloadData()
+            tableView2.reloadData()
     }
 
     @IBAction func movein(_ sender: Any) {
-        let dur = Duration(hours: 0, minutes: 0)
-        let plan = Plan(name: "", duration: dur)
-//        plan.addNewArray(exercises: selectedExercises)
-//        print(plan.printAllElements())
+        if let destinationViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PlanViewController") as? PlanViewController {
+            destinationViewController.plan = plan
+            destinationViewController.selectedExercises = selectedExercises
+            navigationController?.pushViewController(destinationViewController, animated: true)
+        }
     }
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ExerciseToPlanSegue" {
             // No need to set delegate here
@@ -141,7 +146,6 @@ extension ExerciseViewController: UITableViewDataSource {
             button.addTarget(self, action: #selector(addExercise(_:)), for: .touchUpInside)
             cell.accessoryView = button
         }
-        
 
         return cell
     }
@@ -157,7 +161,6 @@ extension ExerciseViewController: UITableViewDelegate {
         }
 
         navigationController?.pushViewController(selectedExerciseVC, animated: true)
-        
     }
 }
 
@@ -166,3 +169,4 @@ extension ExerciseViewController: ExerciseSelectionDelegate {
         delegate?.didSelectExercises(exercises)
     }
 }
+

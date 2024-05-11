@@ -1,5 +1,21 @@
 import Foundation
 
+struct contactno{
+    var contactnumber : String
+}
+
+struct ContactString{
+    var contact: contactno
+    
+    // Modify the initializer to accept a ContactNo instance
+    init(contact: contactno) {
+        self.contact = contact
+    }
+    
+    func printContactString() -> contactno{
+        return contact
+    }
+}
 // MARK: - Sign Up
 struct SignUp {
     var name: String
@@ -102,52 +118,34 @@ struct Routine {
 
 // MARK: - Plan Page
 
-struct Plan{
-    var name: String
-    var duration: Duration
-}
-
-struct Duration{
+//class Plan {
+//    var name: String
+//    var duration: Duration
+//    var exercises: [String]
+//    
+//    init(name: String, duration: Duration, exercises: [String]) {
+//        self.name = name 
+//        self.duration = duration
+//        self.exercises = exercises
+//    }
+//}
+//
+struct Duration {
     var hours: Int
     var minutes: Int
 }
-class Pllan {
-    var plan: [[String : Bool]] = []
-    var currentplan : [String : Bool] = [:]
-    var index : Int = -1
 
-    // Function to add a new array of strings
-    func addNewArray(exercises: [String : Bool]) {
-        plan.append(exercises)
-        currentplan = exercises
-        
+class Plan {
+    var name: String
+    var duration: Duration
+    var exercises: [String : Bool]
+    
+    // Change the initializer to use var instead of let for parameters
+    init(name: String, duration: Duration, exercises: [String: Bool]) {
+        self.name = name
+        self.duration = duration
+        self.exercises = exercises
     }
-
-    // Function to retrieve the array of strings at a specific index
-    func getArray(at index: Int) -> [String]? {
-        guard index >= 0 && index < plan.count else {
-            return nil
-        }
-        let dictionary = plan[index]
-        return Array(dictionary.keys)
-    }
-
-    // Function to remove the array at a specific index
-    func removeArray(at index: Int) {
-        guard index >= 0 && index < plan.count else {
-            return
-        }
-        plan.remove(at: index)
-    }
-    func printAllElements() {
-            for (index, dictionary) in plan.enumerated() {
-                print("Array at index \(index):")
-                for (key, value) in dictionary {
-                    print("Key: \(key), Value: \(value)")
-                }
-                print("--------------------")
-            }
-        }
 }
 
 

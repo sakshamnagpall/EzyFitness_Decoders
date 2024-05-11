@@ -18,13 +18,23 @@ class LogInViewController: UIViewController {
     }
    
     @IBAction func LogInBtn(_ sender: Any) {
-        guard let contactNumberText = contactNumber.text, !contactNumberText.isEmpty else {
-               // If the text field is empty, display an error message or handle it appropriately
-               print("Please enter a contact number.")
-               return
-           }
-
-           // Print the entered contact number to the console
-           print("Entered contact number:", contactNumberText)
-    }
-}
+        
+        guard let contactNumberText = contactNumber.text,
+                      !contactNumberText.isEmpty,
+                      contactNumberText.count == 10,
+                      contactNumberText.rangeOfCharacter(from: CharacterSet.decimalDigits.inverted) == nil else {
+                    let alertController = UIAlertController(title: "Error", message: "Please enter a valid 10-digit phone number.", preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    present(alertController, animated: true, completion: nil)
+                    return
+                }
+                
+                // Create an instance of OTPViewController
+                if let otpViewController = storyboard?.instantiateViewController(withIdentifier: "OTPViewController") as? OTPViewController {
+                    // Assign the contactNumberText to phoneNumber property of OTPViewController
+                    otpViewController.phoneNumber = contactNumberText
+                    // Present the OTPViewController
+                    navigationController?.pushViewController(otpViewController, animated: true)
+                }
+            }
+        }

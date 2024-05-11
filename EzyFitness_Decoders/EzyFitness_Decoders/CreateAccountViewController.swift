@@ -24,20 +24,14 @@ class CreateAccountViewController: UIViewController {
     
     @IBAction func createAccountBtn(_ sender: Any) {
         guard let fullNameText = fullName.text, !fullNameText.isEmpty,
-                  let emailText = email.text, !emailText.isEmpty,
-                  let contactNumberText = contactNumber.text, !contactNumberText.isEmpty else {
-                // If any field is empty, display an error message or handle it appropriately
-                print("Please fill in all fields.")
-                return
-            }
-
-            // At this point, you have all the entered data
-            // Perform further actions, such as creating an account or validating the entered information
-            
-            // Example: Create an account with the entered information
-            let accountInfo: [String: String] = ["fullName": fullNameText,
-                                                 "email": emailText,
-                                                 "contactNumber": contactNumberText]
+                 let emailText = email.text, !emailText.isEmpty,
+                 let contactNumberText = contactNumber.text, !contactNumberText.isEmpty else {
+               // If any field is empty, display an error message
+               let alertController = UIAlertController(title: "Error", message: "Please fill in all fields.", preferredStyle: .alert)
+               alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+               present(alertController, animated: true, completion: nil)
+               return
+           }
     }
     
 

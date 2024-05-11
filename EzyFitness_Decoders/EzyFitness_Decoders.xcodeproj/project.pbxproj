@@ -28,7 +28,6 @@
 		3F49101A2BE67A6A00722EF5 /* legExtension.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F49100E2BE67A6A00722EF5 /* legExtension.gif */; };
 		3F49101B2BE67A6A00722EF5 /* kneetochest.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F49100F2BE67A6A00722EF5 /* kneetochest.gif */; };
 		3F4D5C102BDA0E7200C24681 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D5C0F2BDA0E7200C24681 /* ThirdViewController.swift */; };
-		3F4D5C122BDA1E6D00C24681 /* Plan_S_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D5C112BDA1E6D00C24681 /* Plan_S_ViewController.swift */; };
 		3F60B6A42BEE061F00C52BE7 /* MorningYoga_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F60B6A32BEE061F00C52BE7 /* MorningYoga_ViewController.swift */; };
 		3F60B6A82BEE187900C52BE7 /* ExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F60B6A72BEE187900C52BE7 /* ExerciseDetailViewController.swift */; };
 		3F60B6AC2BEE2AA600C52BE7 /* tabBarControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F60B6AB2BEE2AA600C52BE7 /* tabBarControlller.swift */; };
@@ -54,6 +53,7 @@
 		3FD0AF212BDF696900675235 /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0AF202BDF696900675235 /* firstViewController.swift */; };
 		3FDCA9FB2BE95DFF00624F17 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCA9FA2BE95DFF00624F17 /* Achievement.swift */; };
 		3FDCA9FD2BEA3BDB00624F17 /* activity_vc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCA9FC2BEA3BDB00624F17 /* activity_vc.swift */; };
+		3FDEE1232BEF2F87000CC5F8 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDEE1222BEF2F87000CC5F8 /* OTPViewController.swift */; };
 		3FFDC2342BED20C400E44DF0 /* LegExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDC2332BED20C400E44DF0 /* LegExtension.swift */; };
 		3FFDC2362BED274F00E44DF0 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDC2352BED274F00E44DF0 /* ExerciseViewController.swift */; };
 		3FFDC2382BED27A000E44DF0 /* HamstringStrech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDC2372BED27A000E44DF0 /* HamstringStrech.swift */; };
@@ -95,7 +95,6 @@
 		3F49100E2BE67A6A00722EF5 /* legExtension.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = legExtension.gif; path = ../../../../Downloads/gif/legExtension.gif; sourceTree = "<group>"; };
 		3F49100F2BE67A6A00722EF5 /* kneetochest.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = kneetochest.gif; path = ../../../../Downloads/gif/kneetochest.gif; sourceTree = "<group>"; };
 		3F4D5C0F2BDA0E7200C24681 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		3F4D5C112BDA1E6D00C24681 /* Plan_S_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan_S_ViewController.swift; sourceTree = "<group>"; };
 		3F60B6A32BEE061F00C52BE7 /* MorningYoga_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningYoga_ViewController.swift; sourceTree = "<group>"; };
 		3F60B6A72BEE187900C52BE7 /* ExerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewController.swift; sourceTree = "<group>"; };
 		3F60B6AB2BEE2AA600C52BE7 /* tabBarControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarControlller.swift; sourceTree = "<group>"; };
@@ -121,6 +120,7 @@
 		3FD0AF202BDF696900675235 /* firstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
 		3FDCA9FA2BE95DFF00624F17 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
 		3FDCA9FC2BEA3BDB00624F17 /* activity_vc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activity_vc.swift; sourceTree = "<group>"; };
+		3FDEE1222BEF2F87000CC5F8 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		3FFDC2332BED20C400E44DF0 /* LegExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegExtension.swift; sourceTree = "<group>"; };
 		3FFDC2352BED274F00E44DF0 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 		3FFDC2372BED27A000E44DF0 /* HamstringStrech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamstringStrech.swift; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 			children = (
 				3F46FE732BEDE52600A43156 /* PlanSectionViewController.swift */,
 				3FFDC2352BED274F00E44DF0 /* ExerciseViewController.swift */,
-				3F4D5C112BDA1E6D00C24681 /* Plan_S_ViewController.swift */,
+				3F7ED3C72BE89BE300E0EBC4 /* PlanViewController.swift */,
 			);
 			path = PlanVCs;
 			sourceTree = "<group>";
@@ -210,10 +210,22 @@
 				3FB95D842BD8CF2C00A26FD8 /* AppDelegate.swift */,
 				3FB95D882BD8CF2C00A26FD8 /* ViewController.swift */,
 				3FB95D8A2BD8CF2C00A26FD8 /* Main.storyboard */,
+				3FDEE1222BEF2F87000CC5F8 /* OTPViewController.swift */,
 				3F60B6A72BEE187900C52BE7 /* ExerciseDetailViewController.swift */,
 				3F46FE752BEDEC8C00A43156 /* SecondViewController.swift */,
 				3F46FE712BEDDDD500A43156 /* ProgressViewController.swift */,
 				3F46FE6F2BEDD6B600A43156 /* StreakViewController.swift */,
+				3FDCA9FC2BEA3BDB00624F17 /* activity_vc.swift */,
+				3F9CFFD62BE4DBFC00D8EA8F /* CalenderViewController.swift */,
+				3F7ED3C92BE8A38D00E0EBC4 /* FitnessViewController.swift */,
+				3FBD1A9F2BE373930005C4BF /* SampleViewController.swift */,
+				3FBD1A9B2BE36D360005C4BF /* ShoulderStrechViewController.swift */,
+				3F785B002BE2469100D11CFB /* LogInViewController.swift */,
+				3F785AFE2BE2448A00D11CFB /* CreateAccountViewController.swift */,
+				3F0C49472BE0C07F0077FD8E /* Exercise_8_ViewController.swift */,
+				3F0C49432BDFD6D40077FD8E /* ProfileViewController.swift */,
+				3FD0AF202BDF696900675235 /* firstViewController.swift */,
+				3F4D5C0F2BDA0E7200C24681 /* ThirdViewController.swift */,
 				3FFDC23B2BED28DE00E44DF0 /* NeckRoll.swift */,
 				3FFDC23D2BED28E700E44DF0 /* AnkleRotation.swift */,
 				3FFDC23F2BED28EE00E44DF0 /* ToeLifts.swift */,
@@ -229,18 +241,6 @@
 				3FFDC2332BED20C400E44DF0 /* LegExtension.swift */,
 				3FFDC2372BED27A000E44DF0 /* HamstringStrech.swift */,
 				3FFDC2392BED27E600E44DF0 /* UpperBodyTwist.swift */,
-				3FDCA9FC2BEA3BDB00624F17 /* activity_vc.swift */,
-				3F9CFFD62BE4DBFC00D8EA8F /* CalenderViewController.swift */,
-				3F7ED3C92BE8A38D00E0EBC4 /* FitnessViewController.swift */,
-				3F7ED3C72BE89BE300E0EBC4 /* PlanViewController.swift */,
-				3FBD1A9F2BE373930005C4BF /* SampleViewController.swift */,
-				3FBD1A9B2BE36D360005C4BF /* ShoulderStrechViewController.swift */,
-				3F785B002BE2469100D11CFB /* LogInViewController.swift */,
-				3F785AFE2BE2448A00D11CFB /* CreateAccountViewController.swift */,
-				3F0C49472BE0C07F0077FD8E /* Exercise_8_ViewController.swift */,
-				3F0C49432BDFD6D40077FD8E /* ProfileViewController.swift */,
-				3FD0AF202BDF696900675235 /* firstViewController.swift */,
-				3F4D5C0F2BDA0E7200C24681 /* ThirdViewController.swift */,
 				3F4910052BE67A6900722EF5 /* JumpingJacks.gif */,
 				3F49100F2BE67A6A00722EF5 /* kneetochest.gif */,
 				3F49100E2BE67A6A00722EF5 /* legExtension.gif */,
@@ -377,7 +377,6 @@
 				3FBE62E62BDA551700A905C8 /* EzyFitnessDataModel.swift in Sources */,
 				3FBE62EA2BDA9A8500A905C8 /* Activity_H_ViewController.swift in Sources */,
 				3FBD1A9C2BE36D360005C4BF /* ShoulderStrechViewController.swift in Sources */,
-				3F4D5C122BDA1E6D00C24681 /* Plan_S_ViewController.swift in Sources */,
 				3F46FE762BEDEC8C00A43156 /* SecondViewController.swift in Sources */,
 				3F7ED3CA2BE8A38D00E0EBC4 /* FitnessViewController.swift in Sources */,
 				3FFDC2462BED296A00E44DF0 /* Butterfly.swift in Sources */,
@@ -406,6 +405,7 @@
 				3F60B6AC2BEE2AA600C52BE7 /* tabBarControlller.swift in Sources */,
 				3F46FE742BEDE52600A43156 /* PlanSectionViewController.swift in Sources */,
 				3FFDC2482BED299900E44DF0 /* pushUp.swift in Sources */,
+				3FDEE1232BEF2F87000CC5F8 /* OTPViewController.swift in Sources */,
 				3F46FE702BEDD6B600A43156 /* StreakViewController.swift in Sources */,
 				3FBD1AA02BE373930005C4BF /* SampleViewController.swift in Sources */,
 				3F9CFFD72BE4DBFC00D8EA8F /* CalenderViewController.swift in Sources */,
