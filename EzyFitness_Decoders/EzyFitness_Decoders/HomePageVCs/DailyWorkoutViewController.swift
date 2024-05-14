@@ -1,10 +1,26 @@
 import UIKit
-
-class DailyWorkoutViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+protocol PlanSectionDelegate: AnyObject {
+    func didSelectPlan(_ planName: String)
+}
+class DailyWorkoutViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, PlanSectionDelegate, PlanViewControllerDelegate {
+    func didCreateNewPlan(_ plan: Plan) {
+        
+    }
+    
     @IBOutlet weak var planpicker: UIPickerView!
     
     
-    let workoutPlans = ["Cardio", "Strength Training", "Yoga", "Pilates", "Crossfit"]
+        // Inside didSelectPlan method:
+    func presentPlanSectionViewController() {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            if let planSectionViewController = storyboard.instantiateViewController(withIdentifier: "PlanSectionViewController") as? PlanSectionViewController {
+                planSectionViewController.delegate = self // Set the delegate
+                navigationController?.pushViewController(planSectionViewController, animated: true)
+            }
+        }
+
+        
+    var workoutPlans: [String] = [] // Initialize workoutPlans as an empty array
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -13,10 +29,7 @@ class DailyWorkoutViewController: UIViewController, UIPickerViewDataSource, UIPi
         planpicker.delegate = self
         
         planpicker.backgroundColor = .black
-        
-
         planpicker.setValue(UIColor.white, forKey: "textColor")
-        
     }
     
     // MARK: - UIPickerViewDataSource
@@ -33,14 +46,16 @@ class DailyWorkoutViewController: UIViewController, UIPickerViewDataSource, UIPi
         return workoutPlans[row]
     }
     
-    // MARK: - UIPickerViewDelegate
+    // MARK: - PlanSectionDelegate
     
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let selectedPlan = workoutPlans[row]
-        print("Selected workout plan: \(selectedPlan)")
+    func didSelectPlan(_ planName: String) {
+        // Check if the selected planName already exists in workoutPlans
+        if !workoutPlans.contains(planName) {
+            // Append the selected plan name to workoutPlans
+            workoutPlans.append(planName)
+            
+            // Reload the picker view to reflect the changes
+            planpicker.reloadAllComponents()
+        }
     }
-    
-    // MARK: - Actions
-    
-    
 }

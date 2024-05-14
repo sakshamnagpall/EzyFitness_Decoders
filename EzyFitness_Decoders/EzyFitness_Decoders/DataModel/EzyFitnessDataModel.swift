@@ -25,14 +25,6 @@ struct SignUp {
 
 // MARK: - User
 
-enum FitnessGoal: String, CaseIterable {
-    case loseWeight = "Lose Weight"
-    case gainMuscle = "Gain Muscle"
-    case improveCardio = "Improve Cardio"
-    case increaseStrength = "Increase Strength"
-    case improveFlexibility = "Improve Flexibility"
-    // ... Add more goals as needed
-}
 
 enum WorkoutFrequency: String, CaseIterable {
     case daily = "Daily"
@@ -43,16 +35,37 @@ enum WorkoutFrequency: String, CaseIterable {
 }
 
 struct User {
-    let id: UUID // Changed to UUID for unique identifier
+    let id: UUID
     var username: String
+    var email: String
     var height: String
     var weight: Double
-    var fitnessGoals: Set<FitnessGoal>
+    var fitnessGoals: [String]
     var workoutFrequency: WorkoutFrequency
-//    mutating func updateUserDetails(id: UUID, weight : Double , height : Double , goal : Set<FitnessGoal> , workoutFrequency : WorkoutFrequency) {
-//               
-//                   
-//           }
+    var bmi: Int?
+    
+    init(id: UUID, username: String, email : String, height: String, weight: Double, fitnessGoals: [String], workoutFrequency: WorkoutFrequency, bmi:Int) {
+            self.id = id
+            self.username = username
+            self.email = email
+            self.height = height
+            self.weight = weight
+            self.fitnessGoals = fitnessGoals
+            self.workoutFrequency = workoutFrequency
+            self.bmi = bmi
+        }
+    mutating func addname(username: String, email: String){
+        self.username = username
+        self.email = email
+    }
+
+    mutating func updateUserDetails(weight: Double, height: String, goals: [String], workoutFrequency: WorkoutFrequency, bmi: Int) {
+        self.weight = weight
+        self.height = height
+        self.fitnessGoals = goals
+        self.workoutFrequency = workoutFrequency
+        self.bmi = bmi
+    }
 }
 
 
@@ -138,10 +151,10 @@ struct Duration {
 class Plan {
     var name: String
     var duration: Duration
-    var exercises: [String : Bool]
+    var exercises: [String]
     
     // Change the initializer to use var instead of let for parameters
-    init(name: String, duration: Duration, exercises: [String: Bool]) {
+    init(name: String, duration: Duration, exercises: [String]) {
         self.name = name
         self.duration = duration
         self.exercises = exercises
@@ -286,12 +299,12 @@ let badge = Badge(isNew: true, count: 3)
 class AppUserDataMoel {
     private var user : [User] = []
     init() {
-        user.append(User(id: .unique, username: "JohnDoe", height: "5'8''", weight: 67.0, fitnessGoals: [.loseWeight, .improveCardio], workoutFrequency: .daily))
+        user.append(User(id: UUID(), username: "", email: "", height: "", weight: 0.00, fitnessGoals: [], workoutFrequency: .daily, bmi: 0))
     }
     func getUserDetails() -> [User] {
         return self.user
     }
-    func updateUser(id : UUID , weight : Double , height : String , goal : Set<FitnessGoal> , workoutFrequency : WorkoutFrequency) {
+    func updateUser(id : UUID , weight : Double , height : String , goal : [String] , workoutFrequency : WorkoutFrequency) {
         if let userID = user.firstIndex(where: {$0.id == id}) {
             user[userID].weight = weight
             user[userID].height = height
